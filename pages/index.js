@@ -13,7 +13,6 @@ import ssi from "./assets/festival.png"
 import fb from "./assets/facebook.png"
 import ins from "./assets/instagram.png"
 import twi from "./assets/twitter.png"
-import { itMatchesOne } from 'daisyui/src/lib/postcss-prefixer/utils'
 
 export default function Home() {
   const tim = [
@@ -30,12 +29,12 @@ export default function Home() {
   return (
  <div>
    {/* Nav bar */}
- <div class="navbar bg-base-100 shadow-lg min-w-screen rounded">
-  <div class="flex-1">
-    <a class="btn btn-ghost hover:bg-transparent normal-case text-xl">echo</a>
+ <div className="navbar bg-base-100 shadow-lg min-w-screen rounded">
+  <div className="flex-1">
+    <a className="btn btn-ghost hover:bg-transparent normal-case text-xl">echo</a>
   </div>
-  <div class="flex-none">
-    <ul class="menu menu-horizontal p-0">
+  <div className="flex-none">
+    <ul className="menu menu-horizontal p-0">
       <li><a href='#val'>Nos valeurs</a></li>
       <li><a href='#ser'>Services</a></li>
       <li><a href='#par'>Partenaires</a></li>
@@ -61,15 +60,15 @@ export default function Home() {
   </div>
 </div>
 {/* Section valeurs */}
-<div id="val" class="mt-[7rem] mx-12 ">
-  <div  class="mt-6  flex flex-col items-start justify-start">
-    <p class="text-left text-4xl my-4">Nos valeurs</p>
+<div id="val" className="mt-[7rem] mx-12 ">
+  <div  className="mt-6  flex flex-col items-start justify-start">
+    <p className="text-left text-4xl my-4">Nos valeurs</p>
     </div>
-  <div class="grid grid-cols-3 gap-3 mt-9 flex items-stretch">
+  <div className="grid grid-cols-3 gap-3 mt-9 flex items-stretch">
 {/* Rapidite */}
    <div className='flex flex-col items-start justify-start'>
-     <Image src={fvi} width={52} height={52} />
-     <p class="text-transparent bg-clip-text bg-gradient-to-br from-[#CA7F97] to-[#FC914D] text-left text-xl font-bold mb-4 mt-5">La Rapidité</p>
+     <Image alt='img' src={fvi} width={52} height={52} />
+     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#CA7F97] to-[#FC914D] text-left text-xl font-bold mb-4 mt-5">La Rapidité</p>
    <p className='text-sm max-w-[360px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
      à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
@@ -78,8 +77,8 @@ export default function Home() {
 
 {/* Flexibilite */}
   <div  className='flex flex-col items-start justify-start'>
-    <Image src={svi} width={52} height={52} />
-     <p class="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">La Flexibilité</p>
+    <Image alt='img' src={svi} width={52} height={52} />
+     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">La Flexibilité</p>
    <p className='text-sm max-w-[360px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
      à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
@@ -88,8 +87,8 @@ export default function Home() {
   </div>
 
   <div className='flex flex-col items-start justify-start'>
-    <Image src={tvi} width={52} height={52} />
-     <p class="text-transparent bg-clip-text bg-gradient-to-br from-[#E52030] to-[#F44F5A] text-left text-xl font-bold mb-4 mt-5">Le Respect</p>
+    <Image alt='img' src={tvi} width={52} height={52} />
+     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#E52030] to-[#F44F5A] text-left text-xl font-bold mb-4 mt-5">Le Respect</p>
    <p className='text-sm max-w-[360px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
      à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
@@ -104,22 +103,22 @@ export default function Home() {
 
 
 {/* Section Services */}
-<div id="ser"  class="mt-[7rem] mx-12">
-  <div class="flex flex-col items-start justify-start mt-[7rem] ">
-    <p class="text-3xl my-4">Nos services</p>
+<div id="ser"  className="mt-[7rem] mx-12">
+  <div className="flex flex-col items-start justify-start mt-[7rem] ">
+    <p className="text-3xl my-4">Nos services</p>
     </div>
 
 {/* Gardiennage */}
-  <div class="flex items-start justify-center mx-[47px] my-20  px-[16px]">
-  <div class="mr-12">
-      <Image src={de}  width={580} height={340}/>
+  <div className="flex items-start justify-center mx-[47px] my-20  px-[16px]">
+  <div className="mr-12">
+      <Image alt='img' src={de}  width={580} height={340}/>
   </div>
 
-   <div class="">
+   <div className="">
      <div className='flex items-start justify-start'>
-       <Image src={fsi} width={24} height={24} />
-       <p class="text-left text-base mb-3 ml-2">Gardiennage</p></div>
-     <p class="text-left text-4xl mb-4">Assurez votre securite</p>
+       <Image alt='img' src={fsi} width={24} height={24} />
+       <p className="text-left text-base mb-3 ml-2">Gardiennage</p></div>
+     <p className="text-left text-4xl mb-4">Assurez votre securite</p>
    <p className='max-w-[500px] max-h-[340px]'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
      à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
@@ -129,20 +128,20 @@ export default function Home() {
   
 
 {/* Evenementiel */}
-<div class="flex items-start justify-center mx-[47px] my-32  px-[16px]">
-<div class="">
+<div className="flex items-start justify-center mx-[47px] my-32  px-[16px]">
+<div className="">
 <div className='flex items-start justify-start'>
-       <Image src={ssi} width={24} height={24} />
-       <p class="text-left text-base mb-3 ml-2">Evenementiel</p></div>
-  <p class="text-left text-4xl mb-4 max-w-[560px]">Fournir l'equipement sonore necessaire pour vos evenements</p>
+       <Image alt='img' src={ssi} width={24} height={24} />
+       <p className="text-left text-base mb-3 ml-2">Evenementiel</p></div>
+  <p className="text-left text-4xl mb-4 max-w-[560px]">Fournir l'equipement sonore necessaire pour vos evenements</p>
 <p className='max-w-[500px] max-h-[340px]'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
   à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
   le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
    Généralement, on utilise un texte en faux latin, le Lorem ipsum ou Lipsum.</p>
 </div>
 
-<div class="ml-12">
-   <Image src={de}  width={520} height={360}/>
+<div className="ml-12">
+   <Image alt='img' src={de}  width={520} height={360}/>
 </div>
 </div>
 
@@ -150,11 +149,11 @@ export default function Home() {
 </div>
 
 {/* Section partenaires */}
-<div id="par" class="mt-[7rem] mx-12">
-<div class="flex flex-col items-start justify-start mt-[7rem] ">
-    <p class="text-3xl my-4">Nos partenaires</p>
+<div id="par" className="mt-[7rem] mx-12">
+<div className="flex flex-col items-start justify-start mt-[7rem] ">
+    <p className="text-3xl my-4">Nos partenaires</p>
     </div>
-    <div class="grid grid-cols-4 gap-4 my-12 mx-8">
+    <div className="grid grid-cols-4 gap-4 my-12 mx-8">
   <div className='w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>01</div>
 
   <div className='w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>02</div>
@@ -175,32 +174,32 @@ export default function Home() {
 </div>
 
 {/* Section contacts */}
-<div id="con" class="mt-[7rem] mx-12">
-<div class="flex flex-col items-start justify-start mt-[7rem] ">
-    <p class="text-3xl my-4">Contactez-nous</p>
+<div id="con" className="mt-[7rem] mx-12">
+<div className="flex flex-col items-start justify-start mt-[7rem] ">
+    <p className="text-3xl my-4">Contactez-nous</p>
     </div>
 
-    <div class="grid grid-cols-3 gap-3 my-3 flex items-stretch">
+    <div className="grid grid-cols-3 gap-3 my-3 flex items-stretch">
 {/* social */}
    <div className='flex flex-col items-start justify-start'>
-     <p class="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">Social</p>
+     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">Social</p>
 <div className='flex items-center justify-start'>
-  <Image src={fb} width={44} height={44} />
-  <Image src={ins} width={44} height={44}/>
-  <Image src={twi} width={44} height={44}/>
+  <Image alt='img' src={fb} width={44} height={44}/>
+  <Image alt='img' src={ins} width={44} height={44}/>
+  <Image alt='img' src={twi} width={44} height={44}/>
 </div>
    </div>
 
 {/* telephone */}
   <div className='flex flex-col items-start justify-start'>
-     <p class="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">Telephone</p>
+     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">Telephone</p>
      <div className='flex items-center justify-start'>
 <h3 className='text-lg font-bold'>698004578</h3>
 </div>
   </div>
 
   <div className='flex flex-col items-start justify-start'>
-     <p class="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">E-mail</p>
+     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-4 mt-5">E-mail</p>
      <div className='flex items-center justify-start'>
      <h3 className='text-lg font-bold'>someadress@xyz.com</h3>
 </div>

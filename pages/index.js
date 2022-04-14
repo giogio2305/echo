@@ -218,7 +218,7 @@ export default function Home() {
    <p className='text-sm max-w-[300px] text-center'>Le  texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
       </p>
-      <button class=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
+      <button className=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
   <span>En savoir</span>
   <svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-4 h-4 mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -237,7 +237,7 @@ export default function Home() {
    <p className='text-sm max-w-[300px] text-center'>Le  texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
       </p>
-      <button class=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
+      <button className=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
   <span>En savoir</span>
   <svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-4 h-4 mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
@@ -254,7 +254,7 @@ export default function Home() {
    <p className='text-sm max-w-[300px] text-center'>Le  texte définitif venant remplacer 
      le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
       </p>
-      <button class=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
+      <button className=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
   <span>En savoir</span>
   <svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-4 h-4 mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />

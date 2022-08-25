@@ -1,366 +1,200 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import MyImage from './composant/MyImage'
-import de from "./assets/video.jpg"
-import dea from "./assets/video.jpg"
-import deb from "./assets/video.jpg"
-import fvi from "./assets/speedometer.png"
-import svi from "./assets/spring.png"
-import tvi from "./assets/trust.png"
-import fsi from "./assets/shield.png"
-import ssi from "./assets/festival.png"
-import fb from "./assets/facebook.png"
-import ins from "./assets/instagram.png"
-import twi from "./assets/twitter.png"
+import axeu from '../assets/axe1.jpg'
+import axed from '../assets/axe2.jpg'
+import pu from '../assets/pu.jpg'
+import pd from '../assets/pd.jpg'
+import pt from '../assets/pt.jpg'
+import pq from '../assets/pq.jpg'
 
 export default function Home() {
-  const tim = [
-    {
-      name: de
-    },
-    {
-      name: dea
-    },
-    {
-      name: deb
-    },
-  ]
   return (
- <div>
-   {/* Nav bar */}
- <div className="navbar bg-base-100 shadow-lg min-w-screen rounded">
-  <div className="flex-1">
-    <a className="btn btn-ghost hover:bg-transparent normal-case text-xl">echo</a>
-  </div>
-  <div className="flex-none">
-    <ul className="menu menu-horizontal p-0">
-      <li><a href='#val'>Nos valeurs</a></li>
-      <li><a href='#ser'>Services</a></li>
-      <li><a href='#par'>Partenaires</a></li>
-      <li><a href='#con'>Contacts</a></li>
-    </ul>
-  </div>
-</div>
+    <div className={styles.container}>
+      <div className='w-full h-16 py-3 flex items-center justify-between border-b-2 '>
+      <h1 className='text-3xl font-bold text-base'>Echo</h1>
+      <div className='flex items-center justify-start'>
+        <div className='p-2 text-lg font-medium rounded-sm cursor-pointer hover:bg-gray-100'>Services & solutions</div>
+        <div className='p-2 text-lg font-medium rounded-sm cursor-pointer hover:bg-gray-100 mx-2'>Valeurs</div>
+        <div className='p-2 text-lg font-medium rounded-sm cursor-pointer hover:bg-gray-100 mx-2'>Partenaires</div>
+        <div className='p-2 text-lg font-medium rounded-sm cursor-pointer hover:bg-gray-100 mx-2'>Contacts</div>
+      </div>
+      </div>
 
-<main className=" flex-grow ">
-{/* Hero section */}
-<div className='mt-[5rem] mb-[7rem] mx-12 '>
-  <div className='flex items-center justify-between'>
-    {/* hero text */}
-    <div className='flex flex-col items-start justify-center'>
-      <h1 className='text-6xl font-bold max-w-[604px] tracking-normal'>Pour votre protection et vos evenements</h1>
-      <p className='text-xl font-regular max-w-[400px] tracking-normal mt-8'>
-        Nous vous offrons le meilleurs de nos services a travers nos differents forfaits.
-      </p>
+      <div className='w-full h-[110vh] flex flex-col items-center justify-center mt-12'>
+        <div className='text-6xl text-center font-semibold w-[68%]'>Garantir votre securite, rendre meilleurs vos evenements.</div>
+        <div className='text-2xl text-center mt-10 w-[32%]'>Nous mettons a votre disposition des outils et services pour le faire.</div>
+      <div className='w-full mt-24 flex items-center justify-start'>
+        <div className='w-[280px] h-[300px] relative mx-6 transform rotate-[-3deg]'>
+        <Image src={pu} alt={"psalm"} objectFit="cover" layout='fill' className='rounded-lg'/>
+        </div>
+        <div className='w-[280px] h-[300px] relative mx-6 transform  rotate-[5deg]'>
+        <Image src={pd} alt={"psalm"} objectFit="cover" layout='fill' className='rounded-lg'/>
+        </div>
+        <div className='w-[280px] h-[300px] relative mx-6 transform rotate-[-5deg]'>
+        <Image src={pt} alt={"psalm"} objectFit="cover" layout='fill' className='rounded-lg'/>
+        </div>
+        <div className='w-[280px] h-[300px] relative mx-6 transform  rotate-[4deg]'>
+        <Image src={pq} alt={"psalm"} objectFit="cover" layout='fill' className='rounded-lg'/>
+        </div>
+      </div>
+      </div>
+
+    <h2 className='text-5xl text-slate-800 font-semibold text-center my-28'>Decouvrez nos differents axes de services</h2>
+
+  <div className='w-full flex items-center justify-start my-20'>
+    <div className='w-[444px] h-[320px] relative mx-16'>
+    <div className='w-[444px] h-[320px] bg-sky-400 absolute rotate-[4deg] rounded-lg'></div>
+    <Image src={axeu} alt={"psalm"} objectFit="cover" layout='fill' className='rounded-lg'/>
     </div>
-
-    {/* hero image */}
-    <div className='w-[490px] h-96 bg-gray-600 rounded-lg'></div>
-  </div>
-</div>
-
-
-
-{/* Section Services */}
-<div id="ser"  className="mt-[7rem] mx-6">
-  <div className="flex flex-col items-center justify-center mt-[7rem] ">
-    <p className="text-center text-4xl my-5">Decouvrez nos services</p>
-    <hr className='w-24 h-[3px] rounded bg-gray-300 mt-4 mb-6'/>
-    </div>
-
-<div className='grid grid-cols-3 gap-3 my-8 '>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2  '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Gardiennage</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]     py-2 '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Securite physique</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
-     </p>
-     </div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]  py-2  '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Techniques operationnelles</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2'>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Conseils et strategies</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2  '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Audit de securite</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2 '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Videosurveillance</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2  '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Fanfare</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2 '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Orchestres</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2 '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Hotesses</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-<div className='flex items-center justify-center h-[164px] w-[360px]    py-2 '>
-<div className='flex items-center justify-center h-16 w-16 rounded-full  bg-gray-500 mx-2'>
-<Image alt='img' src={fsi} width={32} height={32} />
-</div>
-<div className='flex flex-col items-center justify-center max-h-40 max-w-[280px] rounded  bg-gray-600 p-4'>
-<p className="text-xl my-2 text-left">Eclairage solaire</p>
-<p className='text-[10px] text-left'>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée 
-     à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
-</div>
-</div>
-
-</div>
-
-
-</div>
-
-
-{/* Section valeurs */}
-<div id="val" className="mt-[7rem] mx-12 ">
-  <div  className="  flex flex-col items-center justify-center">
-    <p className="text-left text-4xl my-5">Nos valeurs</p>
-    <hr className='w-24 h-[2.6px] rounded bg-gray-300 mt-4 mb-6'/>
-    </div>
-  <div className="grid grid-cols-3 gap-3 mt-9 flex items-stretch">
-{/* Rapidite */}
-   <div className='flex flex-col items-center justify-center'>
-   <div className='flex items-center justify-center h-24 w-24 rounded-full  bg-gray-800 mx-2'>
-     <Image alt='img' src={fvi} width={52} height={52} />
-     </div>
-     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#CA7F97] to-[#FC914D] text-left text-xl font-bold mb-4 mt-5">La Rapidité</p>
-     <hr className='bg-gradient-to-br from-[#CA7F97] to-[#FC914D] w-16 h-[3px] rounded-lg bg-gray-300 border-none  mb-6'/>
-   <p className='text-sm max-w-[300px] text-center'>Le  texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
-      </p>
-      <button className=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
-  <span>En savoir</span>
-  <svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-4 h-4 mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
+    <div className='flex flex-col items-start justify-start'>
+    <h5 className='inline-flex text-lg font-semibold text-sky-500 my-[8px]'>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M14.563 9.75a12.014 12.014 0 00-3.427 5.136L9 12.75m3-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286z" />
 </svg>
-</button>
-   </div>
 
-{/* Flexibilite */}
-  <div  className='flex flex-col items-center justify-center'>
-  <div className='flex items-center justify-center h-24 w-24 rounded-full  bg-gray-800 mx-2'>
-  <Image alt='img' src={svi} width={52} height={52} />
-  </div>
-    
-     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#2589D0] to-[#32BDEF] text-left text-xl font-bold mb-3 mt-5">La Flexibilité</p>
-     <hr className='bg-gradient-to-br from-[#2589D0] to-[#32bDEF] w-16 h-[3px] rounded-lg bg-gray-300 border-none  mb-6'/>
-   <p className='text-sm max-w-[300px] text-center'>Le  texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
-      </p>
-      <button className=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
-  <span>En savoir</span>
-  <svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-4 h-4 mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-</svg>
-</button>
-  </div>
-
-  <div className='flex flex-col items-center justify-center'>
-  <div className='flex items-center justify-center h-24 w-24 rounded-full  bg-gray-800 mx-2'>
-    <Image alt='img' src={tvi} width={52} height={52} />
-    </div>
-     <p className="text-transparent bg-clip-text bg-gradient-to-br from-[#E52030] to-[#F44F5A] text-left text-xl font-bold mb-4 mt-5">Le Respect</p>
-     <hr className='bg-gradient-to-br from-[#E52030] to-[#F44F5A] w-16 h-[3px] rounded-lg bg-gray-300 border-none  mb-6'/>
-   <p className='text-sm max-w-[300px] text-center'>Le  texte définitif venant remplacer 
-     le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
-      </p>
-      <button className=" my-5 bg-gray-800 hover:bg-gray-900 text-gray-400 font-bold py-2 px-4 rounded inline-flex items-center">
-  <span>En savoir</span>
-  <svg xmlns="http://www.w3.org/2000/svg" className="fill-current w-4 h-4 mt-1 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
-</svg>
-</button>
-  </div>
-
-
-  </div>
-</div>
-
-
-{/* Section partenaires */}
-<div id="par" className="mt-[7rem] mx-12">
-<div className="flex flex-col items-center justify-center mt-[7rem] ">
-    <p className="text-4xl my-4">Ils nous font confiance</p>
-    <hr className='w-24 h-[3px] rounded bg-gray-300 mt-4 mb-6'/>
-    </div>
-    <div className='flex flex-col items-center justify-center'>
-    <p className='text-sm max-w-[380px] text-center my-5'>
-    De nombreuses entreprises et institutions nous accordent leur confiance pour les accompagner. Ainsi notre expertise et notre savoir-faire maintiennent cette confiance.
-      </p>
-
-
-      <div className="grid grid-cols-4 gap-4 my-12 mx-8">
-  <div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>01</div>
-
-  <div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>02</div>
-
-  <div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>03</div>
-
-  <div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>04</div>
-
-  <div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>05</div>
-
-<div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>06</div>
-
-<div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>07</div>
-
-<div className='m-2 w-[96px] h-[96px] bg-gray-500 rounded-lg flex items-center justify-center'>08</div>
-
-</div>
+       La securite</h5>
+      <h2 className='text-4xl font-bold text-slate-900 leading-normal w-[632px] my-[3px]'>Parce que vous meritez plus qu'une securite optimale.</h2>
+      <p className='text-lg leading-7 font-regular text-slate-600 w-[632px] my-[16px]'>There's a lot to a typical interview process, from recruiter calls and emails to design challenges and take-home exercises (which we're not fans of). Understanding the importance of story-telling and self-awareness are key. But where do you start? What makes for an exceptional interview? Shape can help you uncover answers.</p>
     </div>
     
+  </div>
 
-</div>
+  <div className='w-full flex items-start justify-start my-40'>
+    <div className='flex flex-col items-start justify-start mx-16'>
+    <h5 className='inline-flex text-lg font-semibold text-red-500 my-[8px]'>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+</svg>
 
 
-</main>
 
-<footer className='flex flex-col mx-auto bg-gray-800 px-8 pt-12 pb-4  mt-16'>
-<div className="grid grid-cols-5 gap-5">
+       L'evenementiel</h5>
+      <h2 className='text-4xl font-bold text-slate-900 leading-normal w-[632px] my-[8px]'>Donnez de l'echo a vos evenements.</h2>
+      <p className='text-lg leading-7 font-regular text-slate-600 w-[632px] my-[16px]'>There's a lot to a typical interview process, from recruiter calls and emails to design challenges and take-home exercises (which we're not fans of). Understanding the importance of story-telling and self-awareness are key. But where do you start? What makes for an exceptional interview? Shape can help you uncover answers.</p>
+    </div>
 
+    <div className='w-[444px] h-[320px] relative'>
+    <div className='w-[444px] h-[320px] bg-red-600 absolute rotate-[4deg] rounded-lg'></div>
+    <Image src={axed} alt={"psalm"} objectFit="cover" layout='fill' className='rounded-lg'/>
+    </div>
+    
+  </div>
+
+  <h2 className='leading-snug text-4xl text-slate-800 font-medium mx-16 my-28 w-[572px] max-w-[680px]'>Nous vous offrons les solutions les plus viables.</h2>
+  <h2 className='leading-snug text-5xl text-slate-800 font-medium mx-auto my-16  w-[80%] text-center'>Notre professionalisme est basee sur des valeurs qui nous caracterisent le plus.</h2>
+  <div className='flex items-center justify-center my-20'>
+
+    <div className='flex flex-col items-center justify-center w-[316px] h-[288px] p-2'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mx-auto w-20 h-20 mb-6 text-red-600">
+    <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
+    </svg>
+
+    <h2 className='text-2xl font-bold text-slate-800 my-2 text-left'>Le respect.</h2>
+    <p className='text-base font-regular text-slate-600 my-2 text-center'>Prepare for your next interview right now and before you need it.
+Learn with as much or as little time commitment as you need for the interviewing goals you have.</p>
+
+
+    </div>
+
+    <div className='flex flex-col items-center justify-center w-[316px] mx-28 h-[288px] p-2'>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mx-auto w-20 h-20 mb-6 text-sky-400">
+  <path fillRule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clipRule="evenodd" />
+</svg>
+
+
+    <h2 className='text-2xl font-bold text-slate-800 my-2 text-left'>La rapidité.</h2>
+    <p className='text-base font-regular text-slate-600 my-2 text-center'>Prepare for your next interview right now and before you need it.
+Learn with as much or as little time commitment as you need for the interviewing goals you have.</p>
+
+
+    </div>
+
+    <div className='flex flex-col items-center justify-center w-[316px] h-[288px] p-2'>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mx-auto w-20 h-20 mb-6 text-green-400">
+  <path fillRule="evenodd" d="M15 3.75a.75.75 0 01.75-.75h4.5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0V5.56l-3.97 3.97a.75.75 0 11-1.06-1.06l3.97-3.97h-2.69a.75.75 0 01-.75-.75zm-12 0A.75.75 0 013.75 3h4.5a.75.75 0 010 1.5H5.56l3.97 3.97a.75.75 0 01-1.06 1.06L4.5 5.56v2.69a.75.75 0 01-1.5 0v-4.5zm11.47 11.78a.75.75 0 111.06-1.06l3.97 3.97v-2.69a.75.75 0 011.5 0v4.5a.75.75 0 01-.75.75h-4.5a.75.75 0 010-1.5h2.69l-3.97-3.97zm-4.94-1.06a.75.75 0 010 1.06L5.56 19.5h2.69a.75.75 0 010 1.5h-4.5a.75.75 0 01-.75-.75v-4.5a.75.75 0 011.5 0v2.69l3.97-3.97a.75.75 0 011.06 0z" clipRule="evenodd" />
+</svg>
+
+
+    <h2 className='text-2xl font-bold text-slate-800 my-2 text-left'>La flexibilité</h2>
+    <p className='text-base font-regular text-slate-600 my-2 text-center'>Prepare for your next interview right now and before you need it.
+Learn with as much or as little time commitment as you need for the interviewing goals you have.</p>
+
+
+    </div>
+
+  </div>
+
+<div className='flex items-center justify-start w-4/5 mx-16  bg-gradient-to-r from-cyan-500 to-blue-500 p-10 rounded-lg my-32'>
 <div className='flex flex-col items-start justify-start'>
-<h4 className='text-base font-bold my-2 uppercase'>A PROPOS</h4>
+<h1 className='text-5xl font-bold text-white w-[64%]'>Pret a vous lancer avec nous ?</h1>
+  <p className='text-xl font-regular text-cyan-100 w-[52%] my-6'>Faite nous confiance pour vos projets, et beneficiez des meilleursoffres du secteur.</p>
+</div>
 
-<p className='text-xs max-w-[212px] my-1'>
-Entreprise du groupe ICCNET, créée en 1997, MATRIX TELECOMS est un opérateur Réseaux et Télécoms disposant d'une infrastructure de pointe pour tout type de besoins en solutions de télécommunications.
-</p>
+<div className='cursor-pointer p-4 bg-slate-50 text-lg font-semibold text-blue-600 rounded-xl'>Commencons</div>
+</div>
 
+<h2 className='leading-snug text-4xl text-slate-800 font-medium mx-16 mt-16 mb-8 w-[572px] max-w-[680px]'>Vous avez des questions sur nos differentes offres ?</h2>
+<div className='inline-flex'>
+<div className='flex flex-col items-start justify-start mx-16'>
+  <div className='inline-flex text-sky-500 font-semibold text-lg'>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mr-2 mt-[2px] w-6 h-6">
+  <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+</svg>
+Contactez-nous des maintenant 
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="ml-2 mt-[2px] w-6 h-6">
+  <path fillRule="evenodd" d="M12 2.25a.75.75 0 01.75.75v16.19l6.22-6.22a.75.75 0 111.06 1.06l-7.5 7.5a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 111.06-1.06l6.22 6.22V3a.75.75 0 01.75-.75z" clipRule="evenodd" />
+</svg>
 
 
 </div>
-
-<div className='flex flex-col items-start justify-start'>
-<h4 className='text-base font-bold my-2 uppercase'>Telephone</h4>
-
-<h3 className='text-sm font-bold'>(+237) 699271326</h3>
-<h3 className='text-sm font-bold'>(+237) 673696435</h3>
-
+<div className=' ml-8 my-6 flex items-start justify-start  font-semibold text-lg text-slate-600'>
+  655637254 - 677607428
+</div>
 </div>
 
-<div className='flex flex-col items-start justify-start'>
-<h4 className='text-base font-bold my-2 uppercase'>Email</h4>
+<div className='flex flex-col items-start justify-start mx-16'>
+  <div className='inline-flex text-sky-500 font-semibold text-lg'>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="mr-2 mt-[2px] w-6 h-6">
+  <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+</svg>
 
-<h3 className='text-sm font-bold'>info@echosecurity-events.com</h3>
-<h3 className='text-sm font-bold'>e.securite.events@gmail.com</h3>
+Adressez vous directement a nous. 
 
 </div>
-
-<div className='flex flex-col items-start justify-start'>
-<h4 className='text-base font-bold my-2 uppercase'>social</h4>
-<div className='flex items-center justify-start my-1'>
-  <Image alt='img' src={fb} width={28} height={28}/>
-  <h3 className='text-sm font-bold ml-2'>echosecurityevents</h3>
+<div className=' ml-8 my-6 flex items-start justify-start  font-semibold text-lg text-slate-600'>
+  Lun-Sam, 8h-18h - Hopital de Bonamoussadi, Douala-Cameroun.
+</div>
 </div>
 
 </div>
 
-<div className='flex flex-col items-start justify-start'>
-<h4 className='text-base font-bold my-2 uppercase'>Adresse</h4>
+<div className='border-t-2 border-gray-200 mt-12 mb-4 flex flex-col items-start justify-start py-4'>
+<h1 className='text-3xl font-bold text-base'>Echo</h1>
+<div className='w-[60%] flex items-start justify-between'>
+<ul class="list-none my-10">
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Nos dossiers</li>
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Evenements</li>
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Partenaires</li>
+</ul>
 
-<h3 className='text-sm font-bold'>Hopital public, Bonamoussadi  Douala-Cameroun</h3>
+<ul class="list-none my-10">
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Diaporamas</li>
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Aide et contacts</li>
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Mentions legales</li>
+</ul>
 
+<ul class="list-none my-10">
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Confidentialite</li>
+  <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Conditions d'utilisation</li>
+</ul>
 </div>
-
+<div className='mx-auto text-base text-slate-500 font-medium mt-6'>
+Copyright © 2022 Echo Security & Events. All rights reserved.
 </div>
-<hr className='w-full h-[3px] rounded bg-gray-300 my-4'/>
-
-<div className='flex items-center justify-between'>
-  <p className='text-sm font-semibold'>Copyright © 2022 ECHO SECURITY EVENTS</p>
-  <p className='text-sm font-semibold'>Powered by : <a  href='#' className='underline'>Signer Ink</a></p>
 </div>
-</footer>
-
- </div>
- 
+    </div>
   )
 }

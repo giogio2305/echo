@@ -186,7 +186,7 @@ Adressez vous directement a nous.
   <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Mentions legales</li>
 </ul>
 
-<ul classname="list-none my-10">
+<ul className="list-none my-10">
   <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Confidentialite</li>
   <li className='text-lg font-semibold text-sltae-500 cursor-pointer p-1'>Conditions d'utilisation</li>
 </ul>

@@ -3,10 +3,10 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import axeu from '../assets/axe1.jpg'
 import axed from '../assets/axe2.jpg'
-import pu from '../assets/pu.jpg'
-import pd from '../assets/pd.jpg'
-import pt from '../assets/pt.jpg'
-import pq from '../assets/pq.jpg'
+import pu from '../assets/pu1.jpg'
+import pd from '../assets/pd2.jpg'
+import pt from '../assets/pt3.png'
+import pq from '../assets/pq4.png'
 
 export default function Home() {
   return (
